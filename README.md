@@ -1,5 +1,3 @@
-AcmeGrade-Project
-
 An E-commerce website project using PHP, javascript, HTML, CSS and MYSQL
 Welcome to the project
 Let's take a tour how you can run the entire code on your local system and contribute to this project. Let's discuss step-by-step process
