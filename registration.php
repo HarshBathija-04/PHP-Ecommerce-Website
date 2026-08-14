@@ -184,7 +184,8 @@ if (isset($_POST['form1'])) {
 }
 ?>
 
-<div class="page-banner" style="background-color:#444;background-image: url(assets/uploads/<?php echo $banner_registration; ?>);">
+<div class="page-banner" style="background-image: url(assets/uploads/<?php echo $banner_registration; ?>);">
+    <div class="overlay"></div>
     <div class="inner">
         <h1><?php echo LANG_VALUE_16; ?></h1>
     </div>
@@ -194,22 +195,19 @@ if (isset($_POST['form1'])) {
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="user-content">
-
-                    
-
+                <div class="user-content wide-card">
+                    <h3 style="text-align:center;margin-bottom:24px;font-size:24px;font-weight:700;"><?php echo LANG_VALUE_16; ?></h3>
                     <form action="" method="post">
                         <?php $csrf->echoInputField(); ?>
                         <div class="row">
-                            <div class="col-md-2"></div>
-                            <div class="col-md-8">
+                            <div class="col-md-12">
                                 
                                 <?php
                                 if($error_message != '') {
-                                    echo "<div class='error' style='padding: 10px;background:#f1f1f1;margin-bottom:20px;'>".$error_message."</div>";
+                                    echo "<div class='error' style='padding: 12px 16px;margin-bottom:20px;'>".$error_message."</div>";
                                 }
                                 if($success_message != '') {
-                                    echo "<div class='success' style='padding: 10px;background:#f1f1f1;margin-bottom:20px;'>".$success_message."</div>";
+                                    echo "<div class='success' style='padding: 12px 16px;margin-bottom:20px;'>".$success_message."</div>";
                                 }
                                 ?>
 
@@ -270,9 +268,12 @@ if (isset($_POST['form1'])) {
                                     <label for=""><?php echo LANG_VALUE_98; ?> *</label>
                                     <input type="password" class="form-control" name="cust_re_password">
                                 </div>
-                                <div class="col-md-6 form-group">
-                                    <label for=""></label>
-                                    <input type="submit" class="btn btn-danger" value="<?php echo LANG_VALUE_15; ?>" name="form1">
+                                <div class="col-md-12 form-group" style="margin-top:16px;">
+                                    <input type="submit" class="btn btn-danger" value="<?php echo LANG_VALUE_15; ?>" name="form1" style="width:100%;">
+                                </div>
+                                <div class="col-md-12" style="text-align:center;margin-top:10px;">
+                                    <span style="color:#a0a0a8;font-size:13px;">Already have an account?</span>
+                                    <a href="login.php" style="font-weight:600;margin-left:4px;">Login</a>
                                 </div>
                             </div>
                         </div>                        

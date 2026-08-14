@@ -6,19 +6,19 @@ ini_set('error_reporting', E_ALL);
 date_default_timezone_set('America/Los_Angeles');
 
 // Host Name
-$dbhost = 'localhost';
+$dbhost = 'sql207.infinityfree.com';
 
 // Database Name
-$dbname = 'achmegrade_project';
+$dbname = 'if0_42651040_HBStore';
 
 // Database Username
-$dbuser = 'root';
+$dbuser = 'if0_42651040';
 
 // Database Password
-$dbpass = '';
+$dbpass = 'Ansuharsh2004';
 
 // Defining base url
-define("BASE_URL", "");
+define("BASE_URL", "https://hbstore.infinityfreeapp.com/");
 
 // Getting Admin url
 define("ADMIN_URL", BASE_URL . "admin" . "/");

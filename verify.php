@@ -27,7 +27,8 @@ if ( (!isset($_REQUEST['email'])) || (isset($_REQUEST['token'])) )
 }
 ?>
 
-<div class="page-banner" style="background-color:#444;">
+<div class="page-banner">
+    <div class="overlay"></div>
     <div class="inner">
         <h1>Registration Successful</h1>
     </div>

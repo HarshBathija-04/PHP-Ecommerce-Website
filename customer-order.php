@@ -24,8 +24,8 @@ if(!isset($_SESSION['customer'])) {
                 <?php require_once('customer-sidebar.php'); ?>
             </div>
             <div class="col-md-12">
-                <div class="user-content">
-                    <h3><?php echo LANG_VALUE_25; ?></h3>
+                <div class="user-content wide-card">
+                    <h3 style="margin-bottom:24px;font-size:22px;font-weight:700;"><?php echo LANG_VALUE_25; ?></h3>
                     <div class="table-responsive">
                         <table class="table table-bordered table-striped table-hover">
                             <thead>

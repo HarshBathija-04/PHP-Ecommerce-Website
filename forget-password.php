@@ -64,7 +64,8 @@ if(isset($_POST['form1'])) {
 }
 ?>
 
-<div class="page-banner" style="background-color:#444;background-image: url(assets/uploads/<?php echo $banner_forget_password; ?>);">
+<div class="page-banner" style="background-image: url(assets/uploads/<?php echo $banner_forget_password; ?>);">
+    <div class="overlay"></div>
     <div class="inner">
         <h1><?php echo LANG_VALUE_97; ?></h1>
     </div>

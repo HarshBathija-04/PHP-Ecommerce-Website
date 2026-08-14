@@ -87,6 +87,8 @@ foreach ($result as $row) {
 	<link rel="icon" type="image/png" href="assets/uploads/<?php echo $favicon; ?>">
 
 	<!-- Stylesheets -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -101,6 +103,8 @@ foreach ($result as $row) {
 	<link rel="stylesheet" href="assets/css/select2.min.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
+	<!-- Modern Theme Override -->
+	<link rel="stylesheet" href="assets/css/modern-theme.css">
 
 	<?php
 

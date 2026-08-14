@@ -94,8 +94,8 @@ if (isset($_POST['form1'])) {
                 <?php require_once('customer-sidebar.php'); ?>
             </div>
             <div class="col-md-12">
-                <div class="user-content">
-                    <h3>
+                <div class="user-content wide-card">
+                    <h3 style="margin-bottom:24px;font-size:22px;font-weight:700;">
                         <?php echo LANG_VALUE_117; ?>
                     </h3>
                     <?php

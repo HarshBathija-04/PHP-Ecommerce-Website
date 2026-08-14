@@ -58,34 +58,30 @@ if (isset($_POST['form1'])) {
             </div>
             <div class="col-md-12">
                 <div class="user-content">
-                    <h3 class="text-center">
+                    <h3 class="text-center" style="margin-bottom:24px;font-size:22px;font-weight:700;">
                         <?php echo LANG_VALUE_99; ?>
                     </h3>
                     <form action="" method="post">
                         <?php $csrf->echoInputField(); ?>
-                        <div class="row">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-4">
-                                <?php
-                                if($error_message != '') {
-                                    echo "<div class='error' style='padding: 10px;background:#f1f1f1;margin-bottom:20px;'>".$error_message."</div>";
-                                }
-                                if($success_message != '') {
-                                    echo "<div class='success' style='padding: 10px;background:#f1f1f1;margin-bottom:20px;'>".$success_message."</div>";
-                                }
-                                ?>
-                                <div class="form-group">
-                                    <label for=""><?php echo LANG_VALUE_100; ?> *</label>
-                                    <input type="password" class="form-control" name="cust_password">
-                                </div>
-                                <div class="form-group">
-                                    <label for=""><?php echo LANG_VALUE_101; ?> *</label>
-                                    <input type="password" class="form-control" name="cust_re_password">
-                                </div>
-                                <input type="submit" class="btn btn-primary" value="<?php echo LANG_VALUE_5; ?>" name="form1">
-                            </div>
+                        <?php
+                        if($error_message != '') {
+                            echo "<div class='error' style='padding: 12px 16px;margin-bottom:20px;'>".$error_message."</div>";
+                        }
+                        if($success_message != '') {
+                            echo "<div class='success' style='padding: 12px 16px;margin-bottom:20px;'>".$success_message."</div>";
+                        }
+                        ?>
+                        <div class="form-group">
+                            <label for=""><?php echo LANG_VALUE_100; ?> *</label>
+                            <input type="password" class="form-control" name="cust_password" placeholder="Enter new password">
                         </div>
-                        
+                        <div class="form-group">
+                            <label for=""><?php echo LANG_VALUE_101; ?> *</label>
+                            <input type="password" class="form-control" name="cust_re_password" placeholder="Confirm new password">
+                        </div>
+                        <div class="form-group" style="margin-top:16px;">
+                            <input type="submit" class="btn btn-primary" value="<?php echo LANG_VALUE_5; ?>" name="form1" style="width:100%;">
+                        </div>
                     </form>
                 </div>                
             </div>

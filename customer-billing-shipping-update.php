@@ -90,7 +90,7 @@ if (isset($_POST['form1'])) {
                 <?php require_once('customer-sidebar.php'); ?>
             </div>
             <div class="col-md-12">
-                <div class="user-content">
+                <div class="user-content wide-card">
                     <?php
                     if($error_message != '') {
                         echo "<div class='error' style='padding: 10px;background:#f1f1f1;margin-bottom:20px;'>".$error_message."</div>";
